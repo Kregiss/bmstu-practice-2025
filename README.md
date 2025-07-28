@@ -26,9 +26,9 @@ pip install opencv-python numpy
 
 ## Запуск
 
-1. Анализ директории с изображениями:
+1. Анализ директории с изображениями (больше фотографий [здесь](https://disk.yandex.ru/d/1hGS1x2rsTQKYw)):
 ```bash
-python main.py
+python main.py resources/1
 ```
 По умолчанию анализируются изображения из директории ./resources/1. Поддерживаемые форматы: .jpg, .jpeg, .png.
 
