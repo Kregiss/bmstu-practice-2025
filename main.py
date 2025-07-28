@@ -1,5 +1,6 @@
 import os
 import cv2
+import sys
 import numpy as np
 from collections import Counter
 
@@ -251,5 +252,14 @@ if __name__ == "__main__":
     for key, value in result.items():
         print(f"{key}: {value}")
     """
-    folder = "./resources/1"
+    if len(sys.argv) < 2:
+        print("Использование: python3 main.py <путь_к_папке_с_изображениями>")
+        sys.exit(1)
+
+    folder = sys.argv[1]
+
+    if not os.path.isdir(folder):
+        print(f"Ошибка: папка '{folder}' не существует или недоступна.")
+        sys.exit(1)
+        
     analyze_directory(folder)
