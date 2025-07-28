@@ -28,7 +28,7 @@ pip install opencv-python numpy
 
 1. Анализ директории с изображениями (больше фотографий [здесь](https://disk.yandex.ru/d/1hGS1x2rsTQKYw)):
 ```bash
-python main.py путь/до/пвпки
+python main.py путь/до/папки
 ```
 По умолчанию анализируются изображения из директории ./resources/1. 
 
